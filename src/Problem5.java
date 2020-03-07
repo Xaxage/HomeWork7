@@ -12,15 +12,19 @@ public class Problem5
     static void check(int a)
     {
         boolean x=false;
+        int counter=0;
         for(int i=0;a!=0;i++)
         {
             if(a%10==0)
             {
-                x=true;
-                break;
+                counter++;
             }
             a/=10;
         }
+        if(counter%2==0)
+            {
+                x=true;
+            }
         System.out.println(x);
     }
 }

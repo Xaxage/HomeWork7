@@ -11,9 +11,8 @@ public class Problem1
     static int number(int a)
     {
         int counter=0;
-        for(int i=0;a!=0 ;i++)
+        while(a!=0)
         {
-
             counter=counter+a%10;
             a/=10;
         }
