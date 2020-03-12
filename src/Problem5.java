@@ -11,20 +11,28 @@ public class Problem5
     }
     static void check(int a)
     {
-        boolean x=false;
-        int counter=0;
-        for(int i=0;a!=0;i++)
-        {
-            if(a%10==0)
+        if(a==0)
             {
-                counter++;
+                System.out.println("false");
             }
-            a/=10;
-        }
-        if(counter%2==0)
+        else
             {
-                x=true;
+                boolean x = false;
+                int counter = 0;
+                for (int i = 0; a != 0; i++)
+                    {
+                        if (a % 10 == 0)
+                            {
+                                counter++;
+                            }
+                        a /= 10;
+                    }
+
+                if (counter % 2 == 0)
+                    {
+                        x = true;
+                    }
+                System.out.println(x);
             }
-        System.out.println(x);
     }
 }
